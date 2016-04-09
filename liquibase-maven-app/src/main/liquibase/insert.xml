@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+   <changeSet id="3" author="insert@gmail.com" context="initdata">
+        <sql>
+            insert into user values (1, 'Armen', 'Arzumanyan', 'armen@gmail.com', 'newpassword', 'Yerevan', true);
+            insert into user values (2, 'Ann', 'Smith', 'enn@gmail.com', 'newpassword', 'Paris', true);
+        </sql>
+    </changeSet>
+</databaseChangeLog>
